@@ -1,0 +1,326 @@
+/* Custom CSS for Shaik Hidaythulla's Portfolio */
+
+/* Progress bars */
+.progress-bar[data-width="85%"] {
+  width: 85%;
+}
+
+.progress-bar[data-width="90%"] {
+  width: 90%;
+}
+
+.progress-bar[data-width="70%"] {
+  width: 70%;
+}
+
+/* Project images */
+.block-20.zoom-effect[data-bg="proj_1"] {
+  background-image: url('../images/proj_1.webp');
+}
+
+.block-20.zoom-effect[data-bg="proj_2"] {
+  background-image: url('../images/proj_2.webp');
+}
+
+.block-20.zoom-effect[data-bg="proj_3"] {
+  background-image: url('../images/proj_3.webp');
+}
+
+.block-20.zoom-effect[data-bg="proj_4"] {
+  background-image: url('../images/proj_4.jpeg');
+}
+
+.block-20.zoom-effect[data-bg="proj_5"] {
+  background-image: url('../images/proj_5.jpeg');
+}
+
+/* Hero section enhancements */
+.hero-text-container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #ffffff, #ffbd39);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.btn-hero-primary {
+  background: linear-gradient(to right, #ffbd39, #ff9900);
+  border: none;
+  color: #000;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 189, 57, 0.3);
+}
+
+.btn-hero-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 189, 57, 0.4);
+}
+
+.btn-hero-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: 500;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-hero-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.hero-image-container {
+  position: relative;
+}
+
+.hero-image {
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 189, 57, 0.2), transparent);
+}
+
+.hero-shape {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 189, 57, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* About section */
+.about-info.bg-dark-subtle {
+  background-color: rgba(30, 30, 30, 0.7);
+  border-left: 3px solid #ffbd39;
+}
+
+/* Tech stack badges */
+.tech-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: rgba(255, 189, 57, 0.1);
+  color: #ffbd39;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 3px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.tech-stack {
+  text-align: center;
+}
+
+/* Project counter styling */
+.project-counter {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.project-counter .number {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffbd39;
+}
+
+.project-counter span {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* GitHub projects link */
+.github-projects {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.github-projects h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.github-btn {
+  background-color: #ffbd39;
+  color: #000;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 8px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Social icons */
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 189, 57, 0.1);
+  color: #ffbd39;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #ffbd39;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* Project cards */
+.blog-entry {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: rgba(20, 20, 20, 0.7);
+  height: 100%;
+}
+
+.blog-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.block-20 {
+  height: 250px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.zoom-effect {
+  transition: transform 0.5s ease;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.05);
+}
+
+/* Project carousel */
+.project-carousel .item {
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.project-carousel .owl-prev,
+.project-carousel .owl-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 50%;
+  color: #fff !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.project-carousel .owl-prev:hover,
+.project-carousel .owl-next:hover {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.project-carousel .owl-prev {
+  left: -25px;
+}
+
+.project-carousel .owl-next {
+  right: -25px;
+}
+
+.project-carousel .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.project-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.project-carousel .owl-dot span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #ddd;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.project-carousel .owl-dot.active span {
+  background: #ffbd39;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}

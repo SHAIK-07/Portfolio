@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Shaik Portfolio</title>
+    <title>Shaik Hidaythulla | AI/ML Engineer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta name="description" content="Portfolio of Shaik Hidaythulla - AI/ML Engineer specializing in Machine Learning, NLP, and Generative AI">
+    <meta name="keywords" content="AI/ML Engineer, Machine Learning, NLP, Generative AI, Data Science, Portfolio">
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -17,15 +20,14 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/ionicons.min.css">
-    
+
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-
 /*======================================
 //--//-->   ABOUT
 ======================================*/
@@ -43,19 +45,20 @@
   margin-left: 10px;
 }
 
-
 .skill-mf .progress {
-  /* background-color: #cde1f8; */
   margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
+  border-radius: 10px;
   height: .7rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
 }
 
 .skill-mf .progress .progress-bar {
   height: .7rem;
-  background-color: #ffbd39;
+  background: linear-gradient(to right, #ffbd39, #ff9900);
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
 }
-
 
 /* Animation styles */
 #typing-animation {
@@ -65,58 +68,190 @@
   color: rgb(255, 255, 255);
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
+  border-right: 3px solid #ffbd39;
+  animation: typing 3.5s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  from { width: 0 }
+  to { width: 100% }
 }
 
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ffbd39 }
 }
 
+/* Project Slideshow Styles */
+.hero-image img {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.5s ease;
+  max-height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-image img:hover {
+  transform: scale(1.03);
+}
+
+.home-slider .owl-nav {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.home-slider .owl-nav button {
+  background: rgba(255, 189, 57, 0.2) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.home-slider .owl-nav button:hover {
+  background: rgba(255, 189, 57, 0.5) !important;
+}
 
 /* project image zoom effect */
-
 .zoom-effect {
   overflow: hidden;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.5s ease-out;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .zoom-effect:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
+/* Card styles */
+.blog-entry {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: rgba(20, 20, 20, 0.7);
+  height: 100%;
+}
 
+.blog-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.blog-entry .text {
+  padding: 20px;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 189, 57, 0.1);
+  color: #ffbd39;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #ffbd39;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* Tech stack badges */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.tech-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: rgba(255, 189, 57, 0.1);
+  color: #ffbd39;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Contact form */
+.contact-form {
+  background: rgba(20, 20, 20, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffbd39;
+  box-shadow: 0 0 0 0.2rem rgba(255, 189, 57, 0.25);
+}
+
+/* Certifications */
+.certification-card {
+  background: rgba(20, 20, 20, 0.7);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  border-left: 3px solid #ffbd39;
+}
+
+.certification-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffbd39;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9900;
+}
 </style>
 
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
+
+
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Shaik Hidaythulla</a>
@@ -136,177 +271,250 @@
 	    </div>
 	  </nav>
 	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_4.jpg)">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Shaik Hidaythulla</span></h1>
+		  <div class="home-slider owl-carousel">
+			<!-- Personal Intro Slide -->
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+						<div class="col-md-6 hero-text-container ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="hero-subtitle">Hello World! 👋</span>
+								<h1 class="hero-title mb-4 mt-3">I'm <span>Shaik Hidaythulla</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'DATA SCIENCE ENTHUSIAST  ',
-						'AI/ML Engineer',
-						'Data Analyst  ',
-						'PowerBI Developer   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>A AI/ML Engineer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/shaik-hidaythulla/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://github.com/SHAIK-07" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
+								<!-- Element to contain animated typing -->
+								<div id="typing-animation"></div>
 
 
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Shaik Hidaythulla</span></p>
-										<p><span class="title-s">Job Role: </span> <span>ML Engineer</span></p>
-										<p><span class="title-s">Experience: </span> <span>3 Years</span></p>
-										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
-									  </div>
-									</div>
-								  </div>
-								
+								<p class="mt-4">Machine Learning Engineer with 3 years of experience specializing in developing and deploying AI/ML models to solve business challenges. Expertise in NLP, predictive analytics, and cloud-based AI solutions.</p>
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>Deep Learning</span> <span class="pull-right">70%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>Natural Language Processing</span> <span class="pull-right">70%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>Generative AI</span> <span class="pull-right">70%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-
+								<div class="hero-cta">
+									<a href="https://www.linkedin.com/in/shaik-hidaythulla/" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+										<i class="fab fa-linkedin mr-2"></i> LinkedIn
+									</a>
+									<a href="https://github.com/SHAIK-07" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener" title="GitHub Profile" aria-label="GitHub Profile">
+										<i class="fab fa-github mr-2"></i> GitHub
+									</a>
+									<a href="#contact-section" class="btn btn-hero-primary py-3 px-4" title="Contact Me" aria-label="Contact Me">
+										<i class="fas fa-envelope mr-2"></i> Contact Me
+									</a>
+									<a href="assets/resume-S.pdf" class="btn btn-hero-primary py-3 px-4" title="Download Resume" aria-label="Download Resume">
+										<i class="fas fa-file-alt mr-2"></i> Resume
+									</a>
 								</div>
 							</div>
 						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
 
-								<p>I am an AI/ML Engineer with 2.8 years of experience in Machine Learning, NLP, and Generative AI. I specialize in building AI-powered solutions, predictive models, and cloud-based deployments to drive efficiency and automation.
-
-									Currently, I’m developing an AI-Powered RAG Chatbot using Google Gemini LLM and Vertex AI, aiming to enhance alert resolution and response accuracy. Skilled in Python, SQL, TensorFlow, FastAPI, and LangChain, I thrive on solving real-world problems with AI.
-									
-									🚀 Always exploring the next big AI innovation! </p>
-
-									<ul class="about-info mt-4 px-md-0 px-2">
-										<li class="d-flex"><span>Profile:</span> <span>AI/ML Engineer</span></li>
-										<li class="d-flex"><span>Experience:</span> <span>2.8 Years in AI/ML</span></li>
-										<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology (EEE)</span></li>
-										<li class="d-flex"><span>Languages:</span> <span>English, Hindi, Telugu</span></li>
-										<li class="d-flex"><span>Cloud & AI Tools:</span> <span>Google Cloud, AWS, LangChain, TensorFlow</span></li>
-										<li class="d-flex"><span>Interests:</span> <span>AI Innovations, Problem-Solving, Travel</span></li>
-									</ul>
-									
-
+						<div class="col-md-5 hero-image-container d-none d-md-block">
+							<div class="hero-shape"></div>
+							<div class="hero-image">
+								<img src="images/about-me.png" alt="Shaik Hidaythulla" class="img-fluid">
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
 
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+			<!-- Project 1: Ask-Repo -->
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+						<div class="col-md-6 hero-text-container ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://github.com/SHAIK-07" class="btn btn-primary py-3 px-3">Projects</a></p>
+								<span class="hero-subtitle">Featured Project</span>
+								<h1 class="hero-title mb-4 mt-3">Ask-Repo</h1>
+								<h3>AI-Powered Repository Analysis</h3>
+								<p class="mt-4">A powerful tool that leverages Google's Gemini AI to analyze GitHub repositories and provide intelligent insights about the codebase.</p>
+								<div class="hero-cta">
+									<a href="https://github.com/SHAIK-07/Ask-Repo" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener">
+										<i class="fab fa-github mr-2"></i> GitHub
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 hero-image-container d-none d-md-block">
+							<div class="hero-shape"></div>
+							<div class="hero-image">
+								<img src="images/proj_7.png" alt="Ask-Repo" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Project 2: Movie Recommender System -->
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+						<div class="col-md-6 hero-text-container ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="hero-subtitle">Featured Project</span>
+								<h1 class="hero-title mb-4 mt-3">Movie Recommender System</h1>
+								<h3>Content-Based Movie Recommendations</h3>
+								<p class="mt-4">This Movie Recommender System suggests similar movies based on the title you select, using content-based filtering to find movies with similar features, along with their posters and details.</p>
+								<div class="hero-cta">
+									<a href="https://github.com/SHAIK-07/movie-recommendation-/blob/main/README.md" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener">
+										<i class="fab fa-github mr-2"></i> GitHub
+									</a>
+									<a href="https://movie-recommendation-m.streamlit.app/" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener">
+										<i class="fas fa-external-link-alt mr-2"></i> Live Demo
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 hero-image-container d-none d-md-block">
+							<div class="hero-shape"></div>
+							<div class="hero-image">
+								<img src="images/proj_3.webp" alt="Movie Recommender System" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Project 3: Sunmax Renewables Management System -->
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+						<div class="col-md-6 hero-text-container ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="hero-subtitle">Featured Project</span>
+								<h1 class="hero-title mb-4 mt-3">Sunmax Renewables Management System</h1>
+								<h3>End-to-End Business Tool</h3>
+								<p class="mt-4">A comprehensive business management application designed to streamline operations, manage inventory, track sales, handle customer enquiries, and generate professional invoices and quotations.</p>
+								<div class="hero-cta">
+									<a href="https://github.com/SHAIK-07/tool" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener">
+										<i class="fab fa-github mr-2"></i> GitHub
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 hero-image-container d-none d-md-block">
+							<div class="hero-shape"></div>
+							<div class="hero-image">
+								<img src="images/proj_6.png" alt="Sunmax Renewables Management System" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Project 4: ML_SUPER_APP -->
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+						<div class="col-md-6 hero-text-container ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="hero-subtitle">Featured Project</span>
+								<h1 class="hero-title mb-4 mt-3">ML_SUPER_APP</h1>
+								<h3>End-to-End Machine Learning Tool</h3>
+								<p class="mt-4">A comprehensive tool for machine learning that allows users to upload data, select tasks, and get predictions using AutoML frameworks.</p>
+								<div class="hero-cta">
+									<a href="https://github.com/SHAIK-07/ML_SUPER_APP/blob/main/README.md" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener">
+										<i class="fab fa-github mr-2"></i> GitHub
+									</a>
+									<a href="https://mlsuperapp-nwx5guce9masdhsycxzchu.streamlit.app/" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener">
+										<i class="fas fa-external-link-alt mr-2"></i> Live Demo
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 hero-image-container d-none d-md-block">
+							<div class="hero-shape"></div>
+							<div class="hero-image">
+								<img src="images/proj_1.webp" alt="ML Super App" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Project 5: NLP_SUPER_APP -->
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+						<div class="col-md-6 hero-text-container ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="hero-subtitle">Featured Project</span>
+								<h1 class="hero-title mb-4 mt-3">NLP_SUPER_APP</h1>
+								<h3>A Versatile NLP Tool</h3>
+								<p class="mt-4">Welcome to the NLP Application, a versatile and user-friendly platform designed to perform a wide range of Natural Language Processing (NLP) tasks.</p>
+								<div class="hero-cta">
+									<a href="https://github.com/SHAIK-07/NLP-Super-APP/blob/main/README.md" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener">
+										<i class="fab fa-github mr-2"></i> GitHub
+									</a>
+									<a href="https://nlp-super-app-ditdbcfptlgwd7ee4crsth.streamlit.app/" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener">
+										<i class="fas fa-external-link-alt mr-2"></i> Live Demo
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 hero-image-container d-none d-md-block">
+							<div class="hero-shape"></div>
+							<div class="hero-image">
+								<img src="images/proj_2.webp" alt="NLP Super App" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Project 6: Social Media Data Analysis -->
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+						<div class="col-md-6 hero-text-container ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="hero-subtitle">Featured Project</span>
+								<h1 class="hero-title mb-4 mt-3">Social Media Data Analysis</h1>
+								<h3>SQL-Based Analytics</h3>
+								<p class="mt-4">This project focuses on analyzing data from a simulated social media platform. It involves querying data on users, posts, hashtags, comments, likes, follows, and bookmarks to uncover insights about user engagement and content popularity.</p>
+								<div class="hero-cta">
+									<a href="https://github.com/SHAIK-07/Social-Media-Data-Analysis-Using-SQL/blob/main/README.md" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener">
+										<i class="fab fa-github mr-2"></i> GitHub
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 hero-image-container d-none d-md-block">
+							<div class="hero-shape"></div>
+							<div class="hero-image">
+								<img src="images/proj_4.jpeg" alt="Social Media Data Analysis" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Project 7: Amazon Sales Analysis -->
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+						<div class="col-md-6 hero-text-container ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="hero-subtitle">Featured Project</span>
+								<h1 class="hero-title mb-4 mt-3">Amazon Sales Analysis</h1>
+								<h3>SQL-Based Business Intelligence</h3>
+								<p class="mt-4">This project involves analyzing Amazon sales data to uncover insights into product performance, customer segmentation, and sales trends. It helps answer business questions and drives data-based decisions using SQL queries.</p>
+								<div class="hero-cta">
+									<a href="https://github.com/SHAIK-07/Amazon-Sales-Analysis-Project-using-SQL.git" class="btn btn-hero-primary py-3 px-4" target="_blank" rel="noopener">
+										<i class="fab fa-github mr-2"></i> GitHub
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 hero-image-container d-none d-md-block">
+							<div class="hero-shape"></div>
+							<div class="hero-image">
+								<img src="images/proj_5.jpeg" alt="Amazon Sales Analysis" class="img-fluid">
 							</div>
 						</div>
 					</div>
@@ -317,16 +525,121 @@
 
 
 
-	
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big">About</h1>
+					<h2 class="mb-4">About Me</h2>
+				</div>
+			</div>
+
+			<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay p-4">
+								<div class="row mb-4">
+									<!-- Details -->
+									<div class="col-sm-12 col-md-12">
+									  <div class="about-info bg-dark-subtle p-4 rounded shadow-sm">
+										<p><span class="title-s font-weight-bold"><i class="fas fa-user mr-2"></i>Name: </span> <span>Shaik Hidaythulla</span></p>
+										<p><span class="title-s font-weight-bold"><i class="fas fa-briefcase mr-2"></i>Role: </span> <span>AI/ML Engineer</span></p>
+										<p><span class="title-s font-weight-bold"><i class="fas fa-history mr-2"></i>Experience: </span> <span>3 Years</span></p>
+										<p><span class="title-s font-weight-bold"><i class="fas fa-map-marker-alt mr-2"></i>Location: </span> <span>Bengaluru, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+
+
+
+								<div class="tech-stack mt-4">
+									<h3 class="title-s mb-3">Tech Stack</h3>
+
+									<!-- First row -->
+									<div class="tech-row">
+										<span class="tech-badge"><i class="fab fa-python mr-1"></i> Python</span>
+										<span class="tech-badge"><i class="fas fa-database mr-1"></i> SQL</span>
+										<span class="tech-badge"><i class="fas fa-table mr-1"></i> Data Analysis</span>
+										<span class="tech-badge"><i class="fas fa-brain mr-1"></i> Machine Learning</span>
+										<span class="tech-badge"><i class="fas fa-network-wired mr-1"></i> Deep Learning</span>
+										<span class="tech-badge"><i class="fas fa-comment-alt mr-1"></i> NLP</span>
+									</div>
+
+									<!-- Second row -->
+									<div class="tech-row">
+										<span class="tech-badge"><i class="fas fa-robot mr-1"></i> LLM</span>
+										<span class="tech-badge"><i class="fas fa-magic mr-1"></i> Generative AI</span>
+										<span class="tech-badge"><i class="fas fa-link mr-1"></i> LangChain</span>
+										<span class="tech-badge"><i class="fas fa-user-astronaut mr-1"></i> Agentic AI</span>
+										<span class="tech-badge"><i class="fas fa-brain mr-1"></i> TensorFlow</span>
+										<span class="tech-badge"><i class="fas fa-cogs mr-1"></i> scikit-learn</span>
+									</div>
+
+									<!-- Third row -->
+									<div class="tech-row">
+										<span class="tech-badge"><i class="fas fa-project-diagram mr-1"></i> MLflow</span>
+										<span class="tech-badge"><i class="fas fa-code-branch mr-1"></i> DVC</span>
+										<span class="tech-badge"><i class="fas fa-chart-line mr-1"></i> Power BI</span>
+										<span class="tech-badge"><i class="fas fa-chart-area mr-1"></i> Seaborn</span>
+										<span class="tech-badge"><i class="fas fa-cogs mr-1"></i> MLOps</span>
+										<span class="tech-badge"><i class="fas fa-sync-alt mr-1"></i> CI/CD</span>
+									</div>
+
+									<!-- Fourth row -->
+									<div class="tech-row">
+										<span class="tech-badge"><i class="fab fa-github mr-1"></i> GitHub Actions</span>
+										<span class="tech-badge"><i class="fab fa-docker mr-1"></i> Docker</span>
+										<span class="tech-badge"><i class="fas fa-server mr-1"></i> FastAPI</span>
+										<span class="tech-badge"><i class="fas fa-flask mr-1"></i> Flask</span>
+										<span class="tech-badge"><i class="fas fa-cloud mr-1"></i> GCP</span>
+										<span class="tech-badge"><i class="fab fa-aws mr-1"></i> AWS</span>
+										<span class="tech-badge"><i class="fab fa-microsoft mr-1"></i> Azure</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+
+
+								<p>I am an AI/ML Engineer with 3 years of experience in Machine Learning, NLP, and Generative AI. I specialize in building AI-powered solutions, predictive models, and cloud-based deployments to drive efficiency and automation.
+
+									Currently, I’m developing an AI-Powered RAG Chatbot using Google Gemini LLM and Vertex AI, aiming to enhance alert resolution and response accuracy. Skilled in Python, SQL, TensorFlow, FastAPI, and LangChain, I thrive on solving real-world problems with AI.
+
+									🚀 Always exploring the next big AI innovation! </p>
+
+
+
+
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+
     <section class="ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
 			  <h2 class="mb-4">Resume</h2>
-			  <p>Machine Learning Engineer with 2.8 years of experience specializing in developing and deploying AI/ML models to solve business challenges. 
+			  <p>Machine Learning Engineer with 3 years of experience specializing in developing and deploying AI/ML models to solve business challenges.
 				 Expertise in NLP, predictive analytics, and cloud-based AI solutions.</p>
-			  <a href="assets/resume.pdf" class="btn btn-primary mt-3" download>Download Resume</a>
+			  <a href="assets/resume-S.pdf" class="btn btn-primary mt-3" download>Download Resume</a>
 		  </div>
 		</div>
 
@@ -335,7 +648,7 @@
 			<div class="underline"></div>
 		</div>
 		<br>
-		
+
 		<div class="row">
 			<div class="col-md-12">
 				<div class="resume-wrap ftco-animate">
@@ -357,7 +670,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 
 		<br>
 		<br>
@@ -367,7 +680,7 @@
 			<div class="underline"></div>
 		</div>
 		<br>
-		
+
 			<div class="row">
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
@@ -390,14 +703,14 @@
 
     		<!-- <div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="assets/shaik Resume.pdf" class="btn btn-primary py-4 px-5" download>Download CV</a>
+    				<p><a href="assets/shaik resume-S.pdf" class="btn btn-primary py-4 px-5" download>Download CV</a>
 					</p>
     			</div>
     		</div> -->
     	</div>
     </section>
 
-   
+
 
     <section class="ftco-section" id="project-section">
 		<div class="container">
@@ -408,44 +721,28 @@
 					<p>Below are the personal projects showcasing my skills in Data Science, Machine Learning, SQL, Python, Power BI, and more.</p>
 				</div>
 			</div>
-			
-			<div class="row d-flex">
-				<!-- Project 1 -->
-				<div class="col-md-4 d-flex ftco-animate">
+
+			<!-- Project Carousel -->
+			<div class="project-carousel owl-carousel ftco-animate">
+				<!-- Project 1: Ask-Repo -->
+				<div class="item">
 					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/SHAIK-07/ML_SUPER_APP/blob/main/README.md" class="block-20 zoom-effect" style="background-image: url('images/proj_1.webp');"></a>
+						<a href="https://github.com/SHAIK-07/Ask-Repo" class="block-20 zoom-effect" data-bg="proj_7" title="Ask-Repo: AI-Powered Repository Analysis" aria-label="Ask-Repo: AI-Powered Repository Analysis"></a>
 						<div class="text mt-3 float-right d-block">
 							<h3 class="heading">
-								<a href="https://github.com/SHAIK-07/ML_SUPER_APP/blob/main/README.md">ML_SUPER_APP: An End-to-End Machine Learning Tool</a>
+								<a href="https://github.com/SHAIK-07/Ask-Repo">Ask-Repo: AI-Powered Repository Analysis</a>
 							</h3>
-							<p>A comprehensive tool for machine learning that allows users to upload data, select tasks, and get predictions using AutoML frameworks.</p>
-							<!-- Demo Button -->
-							<p><a href="https://mlsuperapp-nwx5guce9masdhsycxzchu.streamlit.app/" class="btn btn-secondary py-3 px-5">Demo</a></p>
+							<p>A powerful tool that leverages Google's Gemini AI to analyze GitHub repositories and provide intelligent insights about the codebase.</p>
+							<!-- GitHub Button -->
+							<p><a href="https://github.com/SHAIK-07/Ask-Repo" class="btn btn-secondary py-3 px-5"><i class="fab fa-github mr-2"></i>GitHub</a></p>
 						</div>
 					</div>
 				</div>
-				
-				
-				<!-- Project 2 -->
-				<div class="col-md-4 d-flex ftco-animate">
+
+				<!-- Project 2: Movie Recommender System -->
+				<div class="item">
 					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/SHAIK-07/NLP-Super-APP/blob/main/README.md" class="block-20 zoom-effect" style="background-image: url('images/proj_2.webp');"></a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">
-								<a href="https://github.com/SHAIK-07/NLP-Super-APP/blob/main/README.md">NLP_SUPER_APP: A Versatile NLP Tool</a>
-							</h3>
-							<p>Welcome to the NLP Application, a versatile and user-friendly platform designed to perform a wide range of Natural Language Processing (NLP) tasks.</p>
-							<!-- Demo Button -->
-							<p><a href="https://nlp-super-app-ditdbcfptlgwd7ee4crsth.streamlit.app/" class="btn btn-secondary py-3 px-5">Demo</a></p>
-						</div>
-					</div>
-				</div>
-				
-				
-				<!-- Project 3 -->
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/SHAIK-07/movie-recommendation-/blob/main/README.md" class="block-20 zoom-effect" style="background-image: url('images/proj_3.webp');"></a>
+						<a href="https://github.com/SHAIK-07/movie-recommendation-/blob/main/README.md" class="block-20 zoom-effect" data-bg="proj_3" title="Movie Recommender System" aria-label="Movie Recommender System"></a>
 						<div class="text mt-3 float-right d-block">
 							<h3 class="heading">
 								<a href="https://github.com/SHAIK-07/movie-recommendation-/blob/main/README.md">Movie Recommender System</a>
@@ -456,53 +753,100 @@
 						</div>
 					</div>
 				</div>
-				
-			</div>
-			
-			<br>
-			
-			<!-- Second row of projects with center alignment -->
-			<div class="row d-flex justify-content-center">
-				<!-- Project 4 -->
-				<div class="col-md-4 d-flex ftco-animate">
+
+				<!-- Project 3: Sunmax Renewables Management System -->
+				<div class="item">
 					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/SHAIK-07/Social-Media-Data-Analysis-Using-SQL/blob/main/README.md" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpeg');"></a>
+						<a href="https://github.com/SHAIK-07/tool" class="block-20 zoom-effect" data-bg="proj_6" title="Sunmax Renewables Management System" aria-label="Sunmax Renewables Management System"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">
+								<a href="https://github.com/SHAIK-07/tool">Sunmax Renewables Management System</a>
+							</h3>
+							<p>A comprehensive business management application designed to streamline operations, manage inventory, track sales, handle customer enquiries, and generate professional invoices and quotations.</p>
+							<!-- GitHub Button -->
+							<p><a href="https://github.com/SHAIK-07/tool" class="btn btn-secondary py-3 px-5"><i class="fab fa-github mr-2"></i>GitHub</a></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 4: ML_SUPER_APP -->
+				<div class="item">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/SHAIK-07/ML_SUPER_APP/blob/main/README.md" class="block-20 zoom-effect" data-bg="proj_1" title="ML_SUPER_APP: An End-to-End Machine Learning Tool" aria-label="ML_SUPER_APP: An End-to-End Machine Learning Tool"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">
+								<a href="https://github.com/SHAIK-07/ML_SUPER_APP/blob/main/README.md">ML_SUPER_APP: An End-to-End Machine Learning Tool</a>
+							</h3>
+							<p>A comprehensive tool for machine learning that allows users to upload data, select tasks, and get predictions using AutoML frameworks.</p>
+							<!-- Demo Button -->
+							<p><a href="https://mlsuperapp-nwx5guce9masdhsycxzchu.streamlit.app/" class="btn btn-secondary py-3 px-5">Demo</a></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 5: NLP_SUPER_APP -->
+				<div class="item">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/SHAIK-07/NLP-Super-APP/blob/main/README.md" class="block-20 zoom-effect" data-bg="proj_2" title="NLP_SUPER_APP: A Versatile NLP Tool" aria-label="NLP_SUPER_APP: A Versatile NLP Tool"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">
+								<a href="https://github.com/SHAIK-07/NLP-Super-APP/blob/main/README.md">NLP_SUPER_APP: A Versatile NLP Tool</a>
+							</h3>
+							<p>Welcome to the NLP Application, a versatile and user-friendly platform designed to perform a wide range of Natural Language Processing (NLP) tasks.</p>
+							<!-- Demo Button -->
+							<p><a href="https://nlp-super-app-ditdbcfptlgwd7ee4crsth.streamlit.app/" class="btn btn-secondary py-3 px-5">Demo</a></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 6: Social Media Data Analysis -->
+				<div class="item">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/SHAIK-07/Social-Media-Data-Analysis-Using-SQL/blob/main/README.md" class="block-20 zoom-effect" data-bg="proj_4" title="Social Media Data Analysis Using SQL" aria-label="Social Media Data Analysis Using SQL"></a>
 						<div class="text mt-3 float-right d-block">
 							<h3 class="heading">
 								<a href="https://github.com/SHAIK-07/Social-Media-Data-Analysis-Using-SQL/blob/main/README.md">Social Media Data Analysis Using SQL</a>
 							</h3>
 							<p>This project focuses on analyzing data from a simulated social media platform. It involves querying data on users, posts, hashtags, comments, likes, follows, and bookmarks to uncover insights about user engagement and content popularity.</p>
-							</div>
+							<!-- GitHub Button -->
+							<p><a href="https://github.com/SHAIK-07/Social-Media-Data-Analysis-Using-SQL/blob/main/README.md" class="btn btn-secondary py-3 px-5"><i class="fab fa-github mr-2"></i>GitHub</a></p>
+						</div>
 					</div>
 				</div>
-				
-				
-				<!-- Project 5 -->
-				<div class="col-md-4 d-flex ftco-animate">
+
+				<!-- Project 7: Amazon Sales Analysis -->
+				<div class="item">
 					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/SHAIK-07/Amazon-Sales-Analysis-Project-using-SQL.git" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpeg');"></a>
+						<a href="https://github.com/SHAIK-07/Amazon-Sales-Analysis-Project-using-SQL.git" class="block-20 zoom-effect" data-bg="proj_5" title="Amazon Sales Analysis Using SQL" aria-label="Amazon Sales Analysis Using SQL"></a>
 						<div class="text mt-3 float-right d-block">
 							<h3 class="heading">
 								<a href="https://github.com/SHAIK-07/Amazon-Sales-Analysis-Project-using-SQL.git">Amazon Sales Analysis Using SQL</a>
 							</h3>
 							<p>This project involves analyzing Amazon sales data to uncover insights into product performance, customer segmentation, and sales trends. It helps answer business questions and drives data-based decisions using SQL queries.</p>
-							</div>
+							<!-- GitHub Button -->
+							<p><a href="https://github.com/SHAIK-07/Amazon-Sales-Analysis-Project-using-SQL.git" class="btn btn-secondary py-3 px-5"><i class="fab fa-github mr-2"></i>GitHub</a></p>
+						</div>
 					</div>
 				</div>
-				
-			
 			</div>
-			<div class="container">
-				<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-			<h2>More projects on <a href="https://github.com/SHAIK-07" class="btn btn-primary">GitHub</a></h2>
-		</div>
-	</div>
+			<!-- Project Counter -->
+			<div class="project-counter ftco-animate">
+				<div>
+					<span class="number" data-number="20">0</span>
+					<span>+</span>
+					<span>&nbsp; Projects completed</span>
+				</div>
+			</div>
 
-		</div>			
+			<!-- GitHub Projects Link -->
+			<div class="github-projects ftco-animate">
+				<h2>More projects on <a href="https://github.com/SHAIK-07" class="github-btn">GitHub</a></h2>
+			</div>
+
+		</div>
 	</section>
-	
-	
+
+
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
@@ -530,7 +874,7 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+91 7702299692</a></p>
+	            <p><a href="tel:+917702299692">+91 7702299692</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -539,37 +883,37 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">shaik.hidaythulla04@gmail.com</a></p>
+	            <p><a href="mailto:shaik.hidaythulla04@gmail.com">shaik.hidaythulla04@gmail.com</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
+          			<span class="icon-file-alt"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="assets/resume.pdf">resumelink</a></p>
+	            <p><a href="assets/resume-S.pdf" download class="btn btn-primary btn-sm"><i class="fas fa-download mr-2"></i>Resume</a></p>
 	          </div>
           </div>
 
 		  <div class="container">
 			<br>
 			<br>
-			
-			
+
+
    </div>
  </section>
 
 
- 
-	
+
+
     <footer class="ftco-footer ftco-section">
 		<div class="container">
 		  <div class="row">
 			<div class="col-md-12 text-center">
-  
+
 			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a>
 	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			</div>
 		  </div>
@@ -593,8 +937,90 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  
+
   <script src="js/main.js"></script>
-    
+  <script src="js/custom.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize the typing animation
+      const typingAnimationElement = document.getElementById('typing-animation');
+
+      // Create an array of typing text
+      const typingTexts = [
+        'AI/ML Engineer',
+        'Machine Learning Specialist',
+        'NLP Enthusiast',
+        'Data Science Professional'
+      ];
+
+      let currentTextIndex = 0;
+      let currentCharIndex = 0;
+      let isDeleting = false;
+      let typingSpeed = 100;
+
+      function typeText() {
+        const currentText = typingTexts[currentTextIndex];
+
+        if (isDeleting) {
+          // Deleting text
+          typingAnimationElement.textContent = currentText.substring(0, currentCharIndex - 1);
+          currentCharIndex--;
+          typingSpeed = 50;
+        } else {
+          // Typing text
+          typingAnimationElement.textContent = currentText.substring(0, currentCharIndex + 1);
+          currentCharIndex++;
+          typingSpeed = 100;
+        }
+
+        // If finished typing
+        if (!isDeleting && currentCharIndex === currentText.length) {
+          isDeleting = true;
+          typingSpeed = 1500; // Pause at the end
+        }
+
+        // If finished deleting
+        if (isDeleting && currentCharIndex === 0) {
+          isDeleting = false;
+          currentTextIndex = (currentTextIndex + 1) % typingTexts.length;
+          typingSpeed = 500; // Pause before typing next
+        }
+
+        setTimeout(typeText, typingSpeed);
+      }
+
+      // Start the typing animation
+      typeText();
+
+      // Initialize home slider with a delay for the first slide
+      const homeSlider = $('.home-slider');
+
+      // First, initialize with autoplay disabled
+      homeSlider.owlCarousel({
+        loop: true,
+        autoplay: false,
+        margin: 0,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        nav: true,
+        autoplayHoverPause: true,
+        items: 1,
+        navText: ["<span class='ion-ios-arrow-back'></span>", "<span class='ion-chevron-right'></span>"],
+        responsive: {
+          0: { items: 1 },
+          600: { items: 1 },
+          1000: { items: 1 }
+        }
+      });
+
+      // After 1 minute, enable autoplay
+      setTimeout(function() {
+        homeSlider.trigger('stop.owl.autoplay');
+        homeSlider.trigger('play.owl.autoplay', [60000]); // 60000ms = 1 minute
+      }, 60000); // Wait 1 minute before starting autoplay
+    });
+  </script>
+
   </body>
 </html>
