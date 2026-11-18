@@ -8561,12 +8561,12 @@ h1, h2, h3, h4, h5,
             .owl-carousel.home-slider .slider-item .slider-text h2 {
               color: #fff; } }
         .owl-carousel.home-slider .slider-item .slider-text p {
-          color: rgba(255, 255, 255, 0.9);
+          color: #f1f5f9 !important;
           font-weight: 400; }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text p {
-              color: rgba(255, 255, 255, 0.7);
-              font-size: 23px; } }
+              color: #f1f5f9 !important;
+              font-size: 20px; } }
         .owl-carousel.home-slider .slider-item .slider-text .btn-custom {
           bordeR: 1px solid #ffbd39;
           padding: 5px 20px;
