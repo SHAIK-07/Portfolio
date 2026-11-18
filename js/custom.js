@@ -236,6 +236,79 @@ const projectData = {
         githubUrl: "https://github.com/SHAIK-07/Amazon-Sales-Analysis-Project-using-SQL.git",
         demoUrl: null,
         apkUrl: null
+    },
+    lineagediscovery: {
+        title: "Agentic AI Data Lineage Discovery",
+        tagline: "Enterprise Multi-Agent Lineage Framework (Morgan Stanley | Brillio)",
+        image: "images/proj_codepulse.png",
+        badges: ["Python", "LangGraph", "LangChain Deep Agents", "Snowflake", "Stardog", "AutoSys", "Treadmill"],
+        problem: "Enterprise financial institutions maintain massive, heterogeneous ecosystems spanning legacy databases, AutoSys batch jobs, and distributed data lakes. Manually tracing upstream and downstream data lineage and generating source-to-target mappings for regulatory compliance required months of manual auditing.",
+        solution: "Architected a five-agent enterprise multi-agent data lineage framework using LangChain Deep Agents and LangGraph. Designed a centralized orchestration agent coordinating four specialized domain agents (Code Scanning, Non-Code Scanning, AWPW, and AutoSys Jobs) integrated directly with Snowflake and Stardog to automatically map dependencies for any target EON system.",
+        features: [
+            "Implemented five-agent architecture with central orchestrator and four specialized domain agents.",
+            "Developed reusable, signal-specific agent skills combining execution scripts, references, and tool bindings.",
+            "Integrated specialized agents with Snowflake data warehouses and Stardog knowledge graphs.",
+            "Automated upstream and downstream dependency discovery and source-to-target mapping synthesis.",
+            "Version 1 deployment with CI/CD integration through Morgan Stanley's internal Treadmill platform."
+        ],
+        isPrivate: true,
+        githubUrl: null,
+        demoUrl: null,
+        apkUrl: null
+    },
+    codescanning: {
+        title: "Enterprise Code Scanning & AST Intelligence",
+        tagline: "Static Code Analysis & LLM Dependency Discovery (Morgan Stanley | Brillio)",
+        image: "images/proj_aihub.png",
+        badges: ["Python", "Java AST", "Tree-sitter", "Static Analysis", "LLM Reasoning", "Code Intelligence"],
+        problem: "Understanding deep structural relationships and data dependencies across enterprise repositories is hindered by complex multi-tier architectures, dynamic references, and parser limitations in variable-level data propagation.",
+        solution: "Spearheaded the initial technical assessment and proof of concept for an enterprise code-scanning solution as part of a 3-member core team. Combined Java AST parsers, Tree-sitter, and open-source static analysis with LLM-based reasoning to resolve fine-grained variable relationships and data flows.",
+        features: [
+            "Extracted structural code relationships across project, package, class, and method hierarchies.",
+            "Integrated Tree-sitter and Java AST structural parsers for multi-language syntax awareness.",
+            "Enriched traditional parser limitations with LLM reasoning to resolve variable-level data flows.",
+            "Contributed directly to project acquisition and team expansion through technical PoC demonstration."
+        ],
+        isPrivate: true,
+        githubUrl: null,
+        demoUrl: null,
+        apkUrl: null
+    },
+    agentassist: {
+        title: "Real-Time CSR Agent Assist",
+        tagline: "Agentic AI Live Transcription & Guidance Assistant (CVS Pharmacy | Brillio)",
+        image: "images/proj_bvdashboard.png",
+        badges: ["Python", "LangGraph", "Google Gemini", "Google Speech-to-Text", "Salesforce", "Multi-Agent Systems"],
+        problem: "Customer Service Representatives (CSRs) managing complex patient interactions regarding pharmacy services, prescriptions, and insurance inquiries were forced to navigate across disconnected legacy portals, increasing call duration and manual error.",
+        solution: "Engineered a real-time Agentic AI assistant integrating Google Speech-to-Text for live transcript capture and a supervisor-based LangGraph multi-agent architecture powered by Google Gemini to route requests, extract patient intent, and display live recommendations directly inside a unified Salesforce dashboard.",
+        features: [
+            "Live patient-CSR call audio transcription using Google Speech-to-Text.",
+            "Supervisor-based multi-agent routing using LangGraph and Google Gemini for dynamic intent dispatch.",
+            "Salesforce hub-and-spoke integration accessing enterprise backend systems for real-time verification.",
+            "Unified CSR dashboard presenting contextual guidance, verification checks, and AI recommendations."
+        ],
+        isPrivate: true,
+        githubUrl: null,
+        demoUrl: null,
+        apkUrl: null
+    },
+    avantrarag: {
+        title: "AI-Powered RAG Chatbot for Avantra Alert Resolution",
+        tagline: "Intelligent Technical Alert Remediation (Infosys Limited)",
+        image: "images/proj_7.png",
+        badges: ["Python", "LangChain", "RAG", "Google Gemini", "Vertex AI", "Matching Engine", "FastAPI", "Cloud Run"],
+        problem: "Enterprise infrastructure generates high volumes of Avantra monitoring alerts. IT support teams spent substantial manual time searching across fragmented technical documentation, PDF runbooks, and past ticket resolutions.",
+        solution: "Engineered an enterprise RAG chatbot using Google Cloud and LangChain. Automated document ingestion from GCS using Cloud Functions, extracted text via PyMuPDF/pdfplumber/Tesseract, created vector embeddings via Vertex AI Embedding Models indexed in Vertex AI Matching Engine, and served responses with confidence references via FastAPI on Cloud Run.",
+        features: [
+            "Automated document processing pipeline handling PDF, TXT, and scanned documents via Tesseract OCR.",
+            "High-speed semantic search using Google Vertex AI Matching Engine and Firestore metadata filtering.",
+            "FastAPI-based query service deployed on Google Cloud Run with GitHub Actions CI/CD.",
+            "Real-time observability and tracing integrated with Google Cloud Monitoring, Logging, and LangSmith."
+        ],
+        isPrivate: true,
+        githubUrl: null,
+        demoUrl: null,
+        apkUrl: null
     }
 };
 
