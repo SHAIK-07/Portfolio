@@ -1061,3 +1061,26 @@ body {
   box-shadow: 0 6px 20px rgba(255, 189, 57, 0.5);
   color: #000000 !important;
 }
+
+/* Certificate Verification Button */
+.btn-verify-cert {
+  background: rgba(255, 189, 57, 0.12);
+  border: 1px solid rgba(255, 189, 57, 0.35);
+  color: #ffbd39 !important;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none !important;
+}
+
+.btn-verify-cert:hover {
+  background: #ffbd39;
+  color: #0b0c10 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(255, 189, 57, 0.4);
+}
