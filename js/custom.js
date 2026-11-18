@@ -52,7 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (bgName === 'proj_1' || bgName === 'proj_2' || bgName === 'proj_3') {
             extension = 'webp';
-        } else if (bgName === 'proj_6' || bgName === 'proj_7') {
+        } else if (bgName === 'proj_4' || bgName === 'proj_5') {
+            extension = 'jpeg';
+        } else {
             extension = 'png';
         }
 
