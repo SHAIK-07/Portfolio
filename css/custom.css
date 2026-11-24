@@ -105,6 +105,18 @@ body {
   z-index: 2;
 }
 
+/* Keep hero content clear of the fixed navbar and the slider dots */
+.owl-carousel.home-slider .slider-item,
+.owl-carousel.home-slider .slider-item .slider-text {
+  height: auto;
+  min-height: 750px;
+}
+
+.owl-carousel.home-slider .slider-item .slider-text {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
 .hero-subtitle {
   display: inline-block;
   font-size: 1.15rem;

@@ -17,7 +17,7 @@ const projectData = {
             "Real-time CDC push notifications for watchlist scores, breakouts, and exit triggers."
         ],
         isPrivate: true,
-        apkUrl: "assets/stocktics.apk",
+        apkUrl: null,
         githubUrl: null,
         demoUrl: null
     },
@@ -36,7 +36,7 @@ const projectData = {
             "Surgical Git rollback restoring rejected symbols while preserving unrelated manual edits."
         ],
         isPrivate: false,
-        githubUrl: "https://github.com/TestAccount-04/codepulse",
+        githubUrl: "https://github.com/SHAIK-07/codepulse",
         demoUrl: null,
         apkUrl: null
     },
@@ -91,7 +91,7 @@ const projectData = {
             "Habit streak consistency metrics, timeline pacing, and routine completion tracking."
         ],
         isPrivate: true,
-        apkUrl: "assets/dayflow.apk",
+        apkUrl: null,
         githubUrl: null,
         demoUrl: null
     },
@@ -109,7 +109,7 @@ const projectData = {
             "Automated daily SAF backups for easy restore."
         ],
         isPrivate: true,
-        apkUrl: "https://github.com/SHAIK-07/Portfolio/releases/latest/download/fin-app-pre.apk",
+        apkUrl: null,
         githubUrl: null,
         demoUrl: null
     },
