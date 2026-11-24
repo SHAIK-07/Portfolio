@@ -16,9 +16,9 @@ const projectData = {
             "Vector search over earnings call transcripts and quarterly filings via Supabase pgvector.",
             "Real-time CDC push notifications for watchlist scores, breakouts, and exit triggers."
         ],
-        isPrivate: true,
+        isPrivate: false,
         apkUrl: null,
-        githubUrl: null,
+        githubUrl: "https://github.com/SHAIK-07/stocktics",
         demoUrl: null
     },
     codepulse: {
